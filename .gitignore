@@ -1,0 +1,8 @@
+# excluded git files
+.DS_store
+.env
+/vendor/
+/.idea/
+
+/php/bdd-env.php
+/app/test.php
