@@ -3,4 +3,4 @@
 $meta_title = 'Home';
 
 
-require_once ('../php/views/home.php');
+require_once ('../php/view/home.php');

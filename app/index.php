@@ -31,7 +31,7 @@ if (in_array($url, ['', 'home'])) {
     $controller = 'home';
 }
 // test if controller exist
-else if (file_exists('../php/controllers/'. $url .'.php')) {
+else if (file_exists('../php/controller/'. $url .'.php')) {
     $controller = $url;
 }
 else {
@@ -41,9 +41,9 @@ else {
 
 // add content in buffer
 ob_start();
-require_once ('../php/controllers/'. $controller .'.php');
+require_once ('../php/controller/'. $controller .'.php');
 // get content in buffer and clean it
 $content = ob_get_clean();
 
 
-require_once ('../php/views/layout.php');
+require_once('../php/view/layout.php');
