@@ -5,7 +5,7 @@
 function get_implications() {
     global $bdd;
 
-    $get_implications = $bdd->query("SELECT * FROM implications");
+    $get_implications = $bdd->query("SELECT * FROM implication");
 
     return $get_implications;
 }
