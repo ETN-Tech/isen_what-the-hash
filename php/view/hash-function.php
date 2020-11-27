@@ -1,6 +1,9 @@
-<div class="content">
-    <h1>Cryptographic algorithm MD5</h1>
+<main class="bd-content container">
+    <article class="py-1 my-2">
+        <h1>Cryptographic algorithm <?= $hash_function['name'] ?></h1>
 
-    <p>MD5 is a cryptographic algorithm created in . This hash function is not considered anymore secured and should not be used.</p>
+        <p><?= $hash_function['abstract'] ?></p>
 
-</div>
+        <p><?= $hash_function['description'] ?></p>
+    </article>
+</main>

@@ -1,10 +1,13 @@
-<div class="content">
-    <h1>Cryptographic algorithms</h1>
+<main class="bd-content container">
+    <h1>Cryptographic algorithm MD5</h1>
 
-    <p>Lots of different cryptographic algorithms exist. Here are some widely used and spread ones.</p>
+    <p>MD5 is a cryptographic algorithm created in . This hash function is not considered anymore secured and should not be used.</p>
 
-    <h4>MD5</h4>
-    <h4>SHA-1</h4>
-    <h4>SHA-2</h4>
-    <h4>SHA-3</h4>
-</div>
+    <? while ($hash_function = $hash_functions->fetch()) { ?>
+        <article class="py-1 my-2">
+            <h2><?= $hash_function['name'] ?></h2>
+            <p><?= $hash_function['abstract'] ?></p>
+            <p><?= $hash_function['description'] ?></p>
+        </article>
+    <? } ?>
+</main>
