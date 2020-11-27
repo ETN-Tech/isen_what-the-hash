@@ -8,9 +8,9 @@ $url = '';
 $params = [];
 
 // verify if parameter url is provided
-if (isset($_GET['url'])) {
-    $url = htmlspecialchars($_GET['url']);
-    unset($_GET['url']);
+if (isset($_GET['page'])) {
+    $url = htmlspecialchars($_GET['page']);
+    unset($_GET['page']);
 } else {
     $url = htmlspecialchars($_SERVER['REQUEST_URI']);
 }
