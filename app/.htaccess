@@ -1,0 +1,10 @@
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+# Article sans numéro de page :
+RewriteRule ^([a-z0-9-]+)/?$ /?page=$1 [L]
+
+ErrorDocument 404 /?page=404
