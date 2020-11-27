@@ -4,5 +4,7 @@
 /vendor/
 /.idea/
 
-/php/bdd-env.php
 /app/test.php
+/app/css/_variables.scss
+
+/php/bdd-env.php
