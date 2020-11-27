@@ -2,6 +2,7 @@
 
 require_once ("../php/init.php");
 require_once ("../php/functions.php");
+require_once ("../php/model/models.php");
 
 
 $url = '';
