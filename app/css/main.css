@@ -36,10 +36,12 @@
 
 .bd-masthead {
     position: relative;
-    padding: 8rem 15px 5rem 15px;
+    padding: 9rem 15px 6rem 15px;
 }
 .bd-masthead h1 {
     font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
     line-height: 1;
 }
 .bd-masthead .lead {
@@ -53,7 +55,7 @@
 }
 
 .up-content {
-    margin: 0rem 15px 4rem 15px;
+    margin: 1rem 15px 5rem 55px;
 }
 .up-title {
     position: relative;
@@ -61,14 +63,30 @@
     font-weight: 800;
     text-transform: uppercase;
 }
+.up-title:before {
+    content: '#';
+    font-size: 5rem;
+    position: absolute;
+    top: -10px;
+    left: -55px;
+}
 .up-title:after {
     content: '';
     position: absolute;
     left: 3px;
-    bottom: -6px;
+    bottom: 0;
     width: 60px;
     height: 6px;
     background: var(--dark);
+}
+.up-lead {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+.up-text {
+    font-size: 1.3rem;
 }
 
 .home-center {
