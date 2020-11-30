@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main-media.css">
     <title><?php echo $meta_title; ?></title>
 </head>
 
@@ -16,7 +17,7 @@
             <use xlink:href="/icons/bootstrap-icons.svg#lock"/>
         </svg>
         <div>
-            <span class="brand-main">WhatTheHack</span>
+            <span class="brand-main">WhatTheHash</span>
             <span class="brand-lead">Hash Algorithms Security</span>
         </div>
     </a>
@@ -36,6 +37,9 @@
             </li>
             <li class="nav-item">
                 <a href="/attacks" class="nav-link">Attacks</a>
+            </li>
+            <li class="nav-item">
+                <a href="/lab" class="nav-link">Lab</a>
             </li>
         </ul>
     </div>

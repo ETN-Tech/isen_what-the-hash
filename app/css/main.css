@@ -36,8 +36,7 @@
 
 .bd-masthead {
     position: relative;
-    padding: 5rem 15px;
-    /*background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);*/
+    padding: 8rem 15px 5rem 15px;
 }
 .bd-masthead h1 {
     font-size: 4rem;
@@ -48,15 +47,28 @@
     font-weight: 400;
     color: #495057;
 }
-@media (min-width: 576px) {
-    .bd-masthead {
-        padding-top: 8rem;
-        padding-bottom: 5rem;
-    }
-}
 
 .bd-content {
-    padding: 8rem 0 5rem 0;
+    padding: 8rem 15px 5rem 15px;
+}
+
+.up-content {
+    margin: 0rem 15px 4rem 15px;
+}
+.up-title {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.up-title:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    bottom: -6px;
+    width: 60px;
+    height: 6px;
+    background: var(--dark);
 }
 
 .home-center {
