@@ -11,11 +11,9 @@
                 </p>
                 <div class="d-flex flex-column flex-md-row">
                     <a href="/implications/" class="btn btn-lg btn-primary mb-3 mr-md-3">Learn more</a>
-                    <a href="/lab/" class="btn btn-lg btn-outline-secondary mb-3 mr-md-3">Demonstration</a>
+                    <a href="/lab/" class="btn btn-lg btn-secondary mb-3 mr-md-3">Demonstrations</a>
                 </div>
-                <p class="text-muted mb-0">
-                    _
-                </p>
+                <p class="text-muted mb-0"></p>
             </div>
         </div>
 

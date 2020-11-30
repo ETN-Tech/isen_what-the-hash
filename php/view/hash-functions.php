@@ -1,7 +1,13 @@
 <main class="bd-content container">
-    <h1>Cryptographic algorithm MD5</h1>
-
-    <p>MD5 is a cryptographic algorithm created in . This hash function is not considered anymore secured and should not be used.</p>
+    <div class="row">
+        <div class="col-8">
+            <div class="up-content">
+                <h1 class="up-title mb-4 pb-3">Cryptographic hash functions</h1>
+                <p class="up-lead">What are hash functions ?</p>
+                <p class="up-text text-muted">A cryptographic hash function is an algorithm that takes an arbitrary amount of data and produces a fixed-size output of enciphered text called a hash.</p>
+            </div>
+        </div>
+    </div>
 
     <? while ($hash_function = $hash_functions->fetch()) { ?>
         <article class="py-1 my-2">
