@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bd-masthead h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .bd-masthead .lead {
+        font-size: calc(1.275rem + .3vw);
+    }
+}
