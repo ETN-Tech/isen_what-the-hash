@@ -1,51 +1,62 @@
 <?php
 
-/* IMPLICATIONS */
+/* WIKI PAGE */
 
-function get_implications() {
+function get_wiki_page($page_name) {
     global $bdd;
 
-    $get_implications = $bdd->query("SELECT * FROM implication");
+    $get_page = $bdd->prepare("SELECT * FROM wiki_page WHERE page = ?");
+    $get_page->execute(array($page_name));
 
-    return $get_implications;
+    return $get_page->fetch();
+}
+
+function get_wiki_leads($page_id) {
+    global $bdd;
+
+    $get_lead = $bdd->prepare("SELECT * FROM wiki_lead WHERE page_id = ?");
+    $get_lead->execute(array($page_id));
+
+    return $get_lead;
 }
 
 
-/* HASH FUNCTIONS */
+/* WIKI ARTICLES  */
 
-function get_hash_functions() {
+function get_wiki_articles ($page_id) {
     global $bdd;
 
-    $get_hash_functions = $bdd->query("SELECT * FROM hash_function");
+    $get_articles = $bdd->prepare("SELECT * FROM wiki_article WHERE page_id = ?");
+    $get_articles->execute(array($page_id));
 
-    return $get_hash_functions;
+    return $get_articles;
 }
 
-function get_hash_function($hf_id) {
+function get_wiki_article ($article_name) {
     global $bdd;
 
-    $get_hash_function = $bdd->prepare("SELECT * FROM hash_function WHERE id = ?");
-    $get_hash_function->execute(array($hf_id));
+    $get_article = $bdd->prepare("SELECT * FROM wiki_article WHERE name = ?");
+    $get_article->execute(array($article_name));
 
-    return $get_hash_function;
+    return $get_article->fetch();
 }
 
 
-/* ATTACKS */
+/* LABS  */
 
-function get_attacks() {
+function get_labs() {
     global $bdd;
 
-    $get_attacks = $bdd->query("SELECT * FROM attack");
+    $get_labs = $bdd->query("SELECT * FROM lab");
 
-    return $get_attacks;
+    return $get_labs;
 }
 
-function get_attack($attack_id) {
+function get_lab ($lab_name) {
     global $bdd;
 
-    $get_attack = $bdd->prepare("SELECT * FROM attack WHERE id = ?");
-    $get_attack->execute(array($attack_id));
+    $get_lab = $bdd->prepare("SELECT * FROM lab WHERE name = ?");
+    $get_lab->execute(array($lab_name));
 
-    return $get_attack;
+    return $get_lab->fetch();
 }

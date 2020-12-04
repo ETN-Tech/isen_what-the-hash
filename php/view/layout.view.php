@@ -30,13 +30,13 @@
                 <a href="/home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="/implications" class="nav-link">Implications</a>
+                <a href="/wiki/implications" class="nav-link">Implications</a>
             </li>
             <li class="nav-item">
-                <a href="/hash-functions" class="nav-link">Hash Algorithms</a>
+                <a href="/wiki/hash-functions" class="nav-link">Hash Algorithms</a>
             </li>
             <li class="nav-item">
-                <a href="/attacks" class="nav-link">Attacks</a>
+                <a href="/wiki/attacks" class="nav-link">Attacks</a>
             </li>
             <li class="nav-item">
                 <a href="/lab" class="nav-link">Lab</a>

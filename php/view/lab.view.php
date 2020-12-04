@@ -9,9 +9,11 @@
         </div>
     </div>
 
-    <article class="py-1 my-2">
-        <h2>MD5 Collision</h2>
-        <p>Find a collision for any MD5 file.</p>
-    </article>
-
+    <? while ($lab = $labs->fetch()) { ?>
+        <article class="py-1 my-4 d-block">
+            <h2><?= $lab['title'] ?></h2>
+            <p><?= $lab['abstract'] ?></p>
+            <a href="/lab/<?= $lab['name'] ?>" class="btn btn-primary">Try out</a>
+        </article>
+    <? } ?>
 </main>
