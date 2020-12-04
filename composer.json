@@ -1,7 +1,22 @@
 {
+  "repositories": {
+    "php-blake2": {
+      "type": "package",
+      "package": {
+        "name": "strawbrary/php-blake2",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/strawbrary/php-blake2.git",
+          "type": "git",
+          "reference": "origin/master"
+        }
+      }
+    }
+  },
   "require": {
     "php": "^7.1.3",
-    "ext-sqreen": "^1.10"
+    "ext-sqreen": "^1.10",
+    "strawbrary/php-blake2": "1.0"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"

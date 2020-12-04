@@ -10,8 +10,8 @@
                     Hash functions are used to protect the confidentiality of digital data, verify the integrity, authenticate and for a significant number of other technologies. Having secure hash functions is key to protect all these things.
                 </p>
                 <div class="d-flex flex-column flex-md-row">
-                    <a href="/implications/" class="btn btn-lg btn-primary mb-3 mr-md-3">Learn more</a>
-                    <a href="/lab/" class="btn btn-lg btn-secondary mb-3 mr-md-3">Demonstrations</a>
+                    <a href="/wiki/implications" class="btn btn-lg btn-primary mb-3 mr-md-3">Learn more</a>
+                    <a href="/lab" class="btn btn-lg btn-secondary mb-3 mr-md-3">Demonstrations</a>
                 </div>
                 <p class="text-muted mb-0"></p>
             </div>

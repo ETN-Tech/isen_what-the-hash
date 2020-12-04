@@ -9,17 +9,17 @@ $url = '';
 $params = [];
 
 // verify if parameter url is provided
-if (isset($_GET['page'])) {
-    $url = htmlspecialchars($_GET['page']);
-    unset($_GET['page']);
+if (isset($_GET['url'])) {
+    $url = htmlspecialchars($_GET['url']);
+    unset($_GET['url']);
 } else {
     $url = htmlspecialchars($_SERVER['REQUEST_URI']);
 }
 
 // handle parameters
 if (count($_GET) > 0) {
-    foreach ($_GET as $param) {
-        array_push($params, htmlspecialchars($param));
+    foreach ($_GET as $key => $param) {
+        $params[$key] = htmlspecialchars($param);
     }
 }
 
@@ -47,4 +47,4 @@ require_once ('../php/controller/'. $controller .'.php');
 $content = ob_get_clean();
 
 
-require_once('../php/view/layout.php');
+require_once('../php/view/layout.view.php');

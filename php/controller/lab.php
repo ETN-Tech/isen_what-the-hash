@@ -1,5 +1,8 @@
 <?php
 
-$meta_title = "Lab";
+$meta_title = 'Lab';
 
-require_once ('../php/view/lab.php');
+// get page content
+$labs = get_labs();
+
+require_once('../php/view/lab.view.php');
