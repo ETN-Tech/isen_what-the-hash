@@ -13,4 +13,5 @@
         <h2>MD5 Collision</h2>
         <p>Find a collision for any MD5 file.</p>
     </article>
+
 </main>
