@@ -35,7 +35,7 @@ function get_wiki_articles ($page_id) {
 function get_wiki_article ($article_name) {
     global $bdd;
 
-    $get_article = $bdd->prepare("SELECT * FROM wiki_article WHERE name = ?");
+    $get_article = $bdd->prepare("SELECT * FROM wiki_article WHERE name = ? ORDER BY id");
     $get_article->execute(array($article_name));
 
     return $get_article->fetch();
