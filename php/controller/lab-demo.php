@@ -3,6 +3,11 @@
 // get lab details
 $lab = get_lab($params['page']);
 
+if ($lab === false) {
+    header('Location: /lab');
+    die();
+}
+
 $meta_title = 'Lab '.$lab['meta_title'];
 
 // Include lab
