@@ -2,7 +2,7 @@
     <div class="alert alert-primary mb-4">
         <b>Result :</b> <?= $algo_name .'('. $text .') = '. $hash ?>
     </div>
-<? } ?>
+<? } ;?>
 
 <form action="" method="post">
     <div class="form-group">

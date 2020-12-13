@@ -12,8 +12,7 @@ if (isset($_POST['form-hash-functions'])) {
     $text = htmlspecialchars($_POST['text']);
 
     // verify if algo is supported
-    if (array_search($algo_name, $supported_algo)) {
-
+    if (array_search($algo_name, $supported_algo) !== false) {
         if (array_search($algo_name, hash_algos()) !== false) {
             $hash = hash($algo_name, $text);
         } else {
