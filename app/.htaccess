@@ -3,14 +3,21 @@ Options +FollowSymlinks
 
 # Activation du module de réécriture d'URL :
 RewriteEngine on
+RewriteBase /
 
 # --- REWRITE RULES --- #
+
 # Wiki pages
 RewriteRule ^wiki/([a-z0-9-]+)/([a-z0-9-]+)/?$ /?url=wiki-article&page=$1&name=$2 [L]
 RewriteRule ^wiki/([a-z0-9-]+)/?$ /?url=wiki&page=$1 [L]
 
 # Lab pages
 RewriteRule ^lab/([a-z0-9-]+)/?$ /?url=lab-demo&page=$1 [L]
+
+# Admin pages
+RewriteRule ^admin/(login|logout)/?$ /?url=$1 [L]
+RewriteRule ^admin/([a-z0-9-]+)/([a-z0-9-]+)/?$ /?url=$1&name=$2 [L]
+RewriteRule ^admin/([a-z0-9-]+)/?$ /?url=$1 [L]
 
 # General
 RewriteRule ^([a-z0-9-]+)/?$ /?url=$1 [L]

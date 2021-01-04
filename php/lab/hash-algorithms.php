@@ -23,4 +23,7 @@ if (isset($_POST['form-hash-functions'])) {
             }
         }
     }
+    $output = $algo_name .'('. $text .') = '. $hash;
+} else {
+    $output = '<i>Waiting for script execution...</i>';
 }

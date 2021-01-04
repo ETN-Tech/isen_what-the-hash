@@ -47,4 +47,12 @@ require_once ('../php/controller/'. $controller .'.php');
 $content = ob_get_clean();
 
 
+$get_pages = get_pages();
+$pages = array();
+// find pages url for menu
+while ($page = $get_pages->fetch()) {
+    $page['url'] = ($page['wiki']) ? '/wiki/'.$page['name'] : '/'.$page['name'] ;
+    array_push($pages, $page);
+}
+
 require_once('../php/view/layout.view.php');

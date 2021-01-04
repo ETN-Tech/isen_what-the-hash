@@ -2,15 +2,17 @@
     <div class="row">
         <div class="col-10">
             <div class="up-content">
-                <h1 class="up-title mb-4 pb-3"><?= $page['title'] ?></h1>
+                <h1 class="up-title mb-4 pb-3"><?= $article['title'] ?></h1>
 
                 <p class="up-lead"><?= $article['title'] ?></p>
-                <p class="up-text text-muted"><?= $article['abstract'] ?></p>
+                <p class="up-text text-muted"><?= htmlspecialchars_decode($article['abstract_html']) ?></p>
+            </div>
         </div>
     </div>
-    
-    <article class="py-1 my-4">
-        <h2><?= $article['title'] ?></h2>
-        <p><?= $article['abstract'] ?></p>
-    </article>
+
+    <div class="row">
+        <div class="col">
+            <?= htmlspecialchars_decode($article['content_html']) ?></p>
+        </div>
+    </div>
 </main>
