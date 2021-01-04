@@ -4,18 +4,29 @@
             <div class="up-content">
                 <h1 class="up-title mb-4 pb-3"><?= $page['title'] ?></h1>
 
-                <? while ($lead = $leads->fetch()) { ?>
-                    <p class="up-lead"><?= $lead['subtitle'] ?></p>
-                    <p class="up-text text-muted"><?= $lead['text'] ?></p>
-                <? } ?></div>
+                <p class="up-lead"><?= $page['lead_title'] ?></p>
+                <p class="up-text text-muted"><?= $page['lead_text'] ?></p>
+            </div>
         </div>
     </div>
 
-    <? while ($article = $articles->fetch()) { ?>
-        <article class="py-1 my-4 d-block">
-            <h2><?= $article['title'] ?></h2>
-            <p><?= $article['abstract'] ?></p>
-            <a href="/wiki/<?= $page['page'] ?>/<?= $article['name'] ?>" class="btn btn-primary">Learn more</a>
-        </article>
-    <? } ?>
+    <div class="row">
+        <div class="col">
+            <?= htmlspecialchars_decode($page['content_html']) ?>
+        </div>
+    </div>
+
+    <ul class="row row-cols-1 list-unstyled list">
+        <?php while ($article = $articles->fetch()) { ?>
+            <li class="col py-1 my-3 d-block">
+                <div class="card border-light">
+                    <div class="card-body">
+                        <h2><?= $article['title'] ?></h2>
+                        <p><?= htmlspecialchars_decode($article['abstract_html']) ?></p>
+                        <a href="/wiki/<?= $page['name'] ?>/<?= $article['name'] ?>" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </li>
+        <?php } ?>
+    </ul>
 </main>
