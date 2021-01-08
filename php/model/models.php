@@ -21,7 +21,7 @@ function delete_element ($table, $elem_id) {
 function get_user_by_username($username) {
     global $bdd;
 
-    $get_user = $bdd->prepare("SELECT * FROM user WHERE username = ?");
+    $get_user = $bdd->prepare("SELECT * FROM account WHERE username = ?");
     $get_user->execute(array($username));
 
     return $get_user->fetch();
@@ -30,7 +30,7 @@ function get_user_by_username($username) {
 function get_user($user_id) {
     global $bdd;
 
-    $get_user = $bdd->prepare("SELECT * FROM user WHERE id = ?");
+    $get_user = $bdd->prepare("SELECT * FROM account WHERE id = ?");
     $get_user->execute(array($user_id));
 
     return $get_user->fetch();
@@ -39,7 +39,7 @@ function get_user($user_id) {
 function set_last_connexion($user_id) {
     global $bdd;
 
-    $upd_user = $bdd->prepare("UPDATE user SET last_connexion = NOW() WHERE id = ?");
+    $upd_user = $bdd->prepare("UPDATE account SET last_connexion = NOW() WHERE id = ?");
     $upd_user->execute(array($user_id));
 }
 
