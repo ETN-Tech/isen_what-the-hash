@@ -31,7 +31,7 @@
                 <a href="/home" class="nav-link">Home</a>
             </li>
             <?php  foreach ($pages as $page) { ?>
-                <li class="nav-item">
+                <li class="nav-item col-6 col-md-auto">
                     <a href="<?= $page['url'] ?>" class="nav-link"><?= $page['meta_title'] ?></a>
                 </li>
             <?php  } ?>
