@@ -22,12 +22,12 @@
             <span class="brand-lead">Hash Algorithms Security</span>
         </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbar1">
-        <ul class="navbar-nav bd-navbar-nav">
-            <li class="nav-item">
+    <div class="collapse navbar-collapse" id="bdNavbar">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+            <li class="nav-item col-6 col-md-auto">
                 <a href="/home" class="nav-link">Home</a>
             </li>
             <?php  foreach ($pages as $page) { ?>
@@ -56,7 +56,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
