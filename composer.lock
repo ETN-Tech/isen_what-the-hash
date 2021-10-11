@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0c8f39c8c85fbcc5042a594629af01f",
+    "content-hash": "af82a6ccc7fb40e9ebfe5a5c2b61f0a2",
     "packages": [
         {
             "name": "strawbrary/php-blake2",
@@ -20,21 +20,19 @@
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v185",
+            "version": "v199",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "f9f96a05c4b5bd552594bb789413d8665ba77c64"
+                "reference": "1a4e5d3ffe128f8eb8a17e50616462d3c804e11f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/f9f96a05c4b5bd552594bb789413d8665ba77c64",
-                "reference": "f9f96a05c4b5bd552594bb789413d8665ba77c64",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1a4e5d3ffe128f8eb8a17e50616462d3c804e11f",
+                "reference": "1a4e5d3ffe128f8eb8a17e50616462d3c804e11f",
                 "shasum": ""
             },
             "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
                 "bin/heroku-php-apache2",
                 "bin/heroku-php-nginx"
             ],
@@ -49,18 +47,21 @@
                     "email": "dz@heroku.com"
                 }
             ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP and Apache2/Nginx as on Heroku",
             "homepage": "https://github.com/heroku/heroku-buildpack-php",
             "keywords": [
                 "apache",
                 "apache2",
                 "foreman",
                 "heroku",
-                "hhvm",
                 "nginx",
                 "php"
             ],
-            "time": "2020-11-23T03:47:09+00:00"
+            "support": {
+                "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v199"
+            },
+            "time": "2021-10-08T15:04:20+00:00"
         }
     ],
     "aliases": [],
@@ -70,12 +71,13 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1.3",
-        "ext-sqreen": "^1.10"
+        "ext-sqreen": "^1.10",
+        "ext-pdo": "*"
     },
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.1.3",
         "ext-sqreen": "1.10.0"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
