@@ -1,2 +1,5 @@
-# collision-as-a-service
-Projet M1 Collision as a service
+# What The Hash - Hash Algorithm Security
+
+Educative website about Hash algorithm Security.
+
+
